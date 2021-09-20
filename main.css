@@ -1,0 +1,21 @@
+.parent {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.item{
+    background-color: rgb(228, 228, 228);
+    padding: 20px;
+    font-size: 0.85rem;
+    line-height: 1.7;
+}
+
+.item:nth-child(1){
+    font-size: 1.25rem;
+    grid-row: span 2;
+    /* align-self: center;  --this aligns the entire div tag to the center not just the contents*/
+    display: grid; /* To make the content appear in the center, first set the div as grid and then align its contents*/
+    align-content: center;
+}
